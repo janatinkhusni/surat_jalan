@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textSignature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_editext"
+        android:padding="7dp">
+
+        <com.kyanogen.signatureview.SignatureView
+            xmlns:sign="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/signature_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sign:penSize="5dp"
+            sign:backgroundColor="#ffffff"
+            sign:penColor="#000000"
+            sign:enableSignature="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kembali"/>
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hapus"/>
+
+        <Button
+            android:id="@+id/buttonDone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="Selesai"/>
+    </LinearLayout>
+</LinearLayout>
